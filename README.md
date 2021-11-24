@@ -1,5 +1,5 @@
-# minishell
-(42 subject) A simple shell made from scratch !
+# Philosophers
+(42 subject) Create a bunch of philosophers who eat, think and sleep.
 
 ## Table of Content
 
@@ -17,8 +17,17 @@ Project is created with:
 
 ## Description
 
-The aim of this project is to create and commnunicate between different types of threads.\
+The aim of this project is to create and commnunicate between different types of threads represented by philosophers.\
+A number of philosophers [number of philosophers] are sitting around a round table. A fork is between each of them.\
+the principle is simple, the program must do everything to ensure that philosophers do not die.\
+The philosophers die if they have not eaten within [time to die] ms.\
+A philosopher can only eat if both forks next to him are available.\
+Philosophers always do the actions in the same order and in a loop until they die or [number of time each philosopher must eat] is reached: 
+* thinking (until two forks become free)
+* eating (during [time to sleep] ms)
+* sleeping (during [time to sleep] ms)
 
+If a philospher dies, the simulation ends.
 
 ## Installation
 
@@ -36,13 +45,12 @@ make re		#cleans everything in the project and compiles everything again
 
 Specific to the project:
 ````sh
-./minishell	#make a brand new terminal
-exit		#exits the minishell
+./philo [nb of philosophers] [time to die] [time to eat] [time to sleep]	[number of times each philosopher must eat (optional)] #start the simulation
 ````
 
 ## Utility
 
-I learned a lot about shell and unix during this project and it is quite satisfaying to see that you are able to code an entire shell environment at this stage of your studies (1 year after starting to code)
+I learned a lot about threads during this project, especially about memory managment and types of threads.
 
 ## Contributing
 
