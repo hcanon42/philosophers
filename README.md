@@ -45,7 +45,7 @@ make re		#cleans everything in the project and compiles everything again
 
 Specific to the project:
 ````sh
-./philo [nb of philosophers] [time to die] [time to eat] [time to sleep]	[number of times each philosopher must eat (optional)] #start the simulation
+./philo [nb of philosophers] [time to die] [time to eat] [time to sleep] [number of times each philosopher must eat (optional)] #start the simulation
 ````
 
 ## Utility
